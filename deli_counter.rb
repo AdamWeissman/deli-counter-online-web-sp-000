@@ -1,10 +1,9 @@
 # Write your code here.
 
 def line(deli)
-  case deli.length
-  when 0
-    puts "The line is currently empty"
+  if deli.length > 0
+    puts deli.with_index { |val,index| puts "index: #{index} for #{val}" }
   else
-    puts "There are #{deli.length} people on line")
+    puts "The line is currently empty."
   end
 end

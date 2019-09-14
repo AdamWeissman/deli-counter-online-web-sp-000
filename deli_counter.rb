@@ -2,7 +2,8 @@
 
 def line(deli)
   if deli.length > 0
-    the_line = deli.collect.each_with_index {|name, index| index+"."+" "+name}
+    the_line = []
+    deli.each_with_index {|name, index| the_line << index+"."+" "+name}
     the_line.unshift("The line is currently:")
     return the_line.join.to_s
   else

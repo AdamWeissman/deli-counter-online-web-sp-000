@@ -22,9 +22,12 @@ end
 def now_serving(deli)
   counter = deli.length
   until counter == 0
-    puts "Currently serving #{deli.first}."
-    deli.shift
-    counter -= 1
+    if counter > 0
+      puts "Currently serving #{deli.first}."
+      deli.shift
+      counter -= 1
+    else
+      puts "There is nobody waiting to be served!"
+    end
   end
-    
 end

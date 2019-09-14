@@ -4,8 +4,8 @@ def line(deli)
   if deli.length > 0
     the_line = []
     deli.each_with_index do |name, index|
-      the_line << index+"."
-      the_line << " "+name
+      the_line << index.to_s+"."
+      the_line << " "+name.to_s
     end
     the_line.unshift("The line is currently:")
     return the_line.join

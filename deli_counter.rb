@@ -27,6 +27,5 @@ def now_serving(deli)
     puts "Currently serving #{deli.first}."
     deli.shift
     counter -= 1
-    end
   end
 end

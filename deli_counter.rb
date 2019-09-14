@@ -16,5 +16,5 @@ end
 
 def take_a_number(current_line, new_customer)
   new_line = current_line << new_customer
-  return line(new_line)
+  return puts "Welcome, #{new_customer.last} you are currently number #{new_customer.index} in line."
 end

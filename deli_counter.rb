@@ -3,9 +3,12 @@
 def line(deli)
   if deli.length > 0
     the_line = []
-    deli.each_with_index {|name, index| the_line << index+"."+" "+name}
+    deli.each_with_index do |name, index|
+      the_line << index+"."
+      the_line << " "+name}
+    end
     the_line.unshift("The line is currently:")
-    return the_line.join.to_s
+    return the_line.join
   else
     puts "The line is currently empty."
   end

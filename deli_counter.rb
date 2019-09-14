@@ -22,7 +22,7 @@ end
 def now_serving(deli)
   counter = deli.length
   until counter == 0
-    if counter > 0
+    unless counter > 0
       puts "Currently serving #{deli.first}."
       deli.shift
       counter -= 1

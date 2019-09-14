@@ -20,4 +20,5 @@ def take_a_number(current_line=[], new_customer)
 end
 
 def now_serving(deli)
+  if deli.empty
 end

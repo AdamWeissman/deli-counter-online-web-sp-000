@@ -5,7 +5,7 @@ def line(deli)
     the_line = []
     deli.each_with_index do |name, index|
       the_line << index+"."
-      the_line << " "+name}
+      the_line << " "+name
     end
     the_line.unshift("The line is currently:")
     return the_line.join

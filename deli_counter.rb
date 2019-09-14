@@ -8,7 +8,7 @@ def line(deli)
       the_line << " "+name
     end
     the_line.unshift("The line is currently:")
-    return the_line.join
+    return puts the_line.join
   else
     puts "The line is currently empty."
   end

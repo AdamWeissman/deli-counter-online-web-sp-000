@@ -18,3 +18,6 @@ def take_a_number(current_line=[], new_customer)
   new_line = current_line << new_customer
   return puts "Welcome, #{new_customer}. You are number #{new_line.size.to_s} in line."
 end
+
+def now_serving(deli)
+  

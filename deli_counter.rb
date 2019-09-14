@@ -1,5 +1,7 @@
 # Write your code here.
 
-def line(deli)
-  line.empty? ? "The line is currently empty" : "There are #{line.size} people on line"
+katz_deli = []
+
+def line(deli=katz_deli)
+  deli.empty? ? "The line is currently empty" : "There are #{line.size} people on line"
 end

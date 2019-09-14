@@ -16,5 +16,5 @@ end
 
 def take_a_number(current_line=[], new_customer)
   new_line = current_line << new_customer
-  return puts "Welcome, #{new_customer}. You are currently number #{new_line.length+1} in line."
+  return puts "Welcome, #{new_customer}. You are currently number #{new_line.length+1.to_s} in line."
 end

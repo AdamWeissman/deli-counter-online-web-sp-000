@@ -5,6 +5,6 @@ def line(deli)
   when 0
     puts "The line is currently empty"
   else
-    puts "There are #{deli.size} people on line")
+    puts "There are #{deli.length} people on line")
   end
 end
